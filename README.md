@@ -1,56 +1,15 @@
-# 2024 봄학기 "빅데이터 응용 보안" 과목 수강생을 위한 python 프로그래밍 언어 및 딥러닝 개요 tutorial 
-
-- 수강생들이 python 프로그래밍 언어에 대해서 기본적인 사항을 이해하고 있는 것을 전제로 합니다.
+# 2024 봄학기 "빅데이터 응용 보안" - python 프로그래밍 언어 및 딥러닝 개요 
+- 본 과목 수강생들이 python 프로그래밍 언어에 대해서 기본적인 사항을 이해하고 있는 것을 전제로 합니다.
+- 다만, 아직 익숙치 않은 학생들을 위해 python 언어 및 딥러닝 개요에 대해 설명을 빠르고 효과적으로 진행하기 위해 참고도서의 github repository 를 활용하여 수업을 진행합니다. 
 - 참고도서는 아래와 같습니다. 슬라이드 파일을 이용하여 수업이 진행되므로 도서는 구매하지 않아도 무방합니다. 
 
 # 『밑바닥부터 시작하는 딥러닝』
 
 <a href="http://www.yes24.com/Product/Goods/34970929"><img src="https://github.com/WegraLee/deep-learning-from-scratch/blob/master/cover.jpeg" width="150" align=right></a>
 
-:red_circle: **[공지]** 종종 실습용 손글씨 데이터셋 다운로드 사이트( http://yann.lecun.com/exdb/mnist/ )가 연결되지 않습니다.
-그래서 예제 수행에 필요한 데이터셋 파일을 /dataset/ 디렉터리에 올려뒀습니다.
-혹 사이트가 다운되어 데이터를 받을 수 없다면 아래 파일 4개를 각자의 <예제 소스 홈>/dataset/ 디렉터리 밑에 복사해두면 됩니다. ^__^
-
-* [t10k-images-idx3-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/t10k-images-idx3-ubyte.gz)
-* [t10k-labels-idx1-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/t10k-labels-idx1-ubyte.gz)
-* [train-images-idx3-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/train-images-idx3-ubyte.gz)
-* [train-labels-idx1-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/train-labels-idx1-ubyte.gz)
-
----
-
-## 시리즈 소개
-
-<a href="https://github.com/WegraLee/deep-learning-from-scratch-3/blob/master/%EB%B0%91%EB%B0%94%EB%8B%A5%20%EC%8B%9C%EB%A6%AC%EC%A6%88%20%EC%86%8C%EA%B0%9C.pdf"><img src="https://github.com/WegraLee/deep-learning-from-scratch-3/blob/master/%EB%B0%91%EB%B0%94%EB%8B%A5%20%EC%8B%9C%EB%A6%AC%EC%A6%88%20%EC%86%8C%EA%B0%9C.png" width=1000></a>
-
-『밑바닥부터 시작하는 딥러닝』 시리즈는 현재 4편까지 출간되었고, 2024년 중으로 5편도 출간될 예정입니다. 5편까지의 핵심 주제와 관계는 대략 다음 그림처럼 정리할 수 있습니다.
-
-<img src="https://github.com/WegraLee/deep-learning-from-scratch-4/blob/master/series overview.png" width="600">
-
-시리즈의 모든 책은 기존 편을 읽지 않았어도 무리가 없도록 꾸려졌습니다. 예를 들어 3편에서 만드는 프레임워크는 작동 원리뿐 아니라 API 형태까지 파이토치와 거의 같습니다. 그래서 3편을 읽지 않았어도 4편을 읽는 데 전혀 무리가 없습니다.
-
-* [❷편의 깃허브 저장소](https://github.com/WegraLee/deep-learning-from-scratch-2)
-* [❸편의 깃허브 저장소](https://github.com/WegraLee/deep-learning-from-scratch-3)
-* [❹편의 깃허브 저장소](https://github.com/WegraLee/deep-learning-from-scratch-4)
-
-## 선수지식
-
-다음은 역자가 추천하는 선수지식입니다.
-<img src="https://github.com/WegraLee/deep-learning-from-scratch-3/blob/master/%EB%B0%91%EB%B0%94%EB%8B%A5%20%EC%84%A0%EC%88%98%EC%A7%80%EC%8B%9D.png" width=1000>
-
----
-
-## 새소식
-:white_check_mark: **2020.02.03** - 1.6.3절의 예시 이미지를 교체했습니다. 기존 이미지는 외설성 논란이 있어 왔고, 최근 이 이미지 사용을 중지하자는 움직임이 본격화되었습니다([Nautre Nanotech](https://www.nature.com/articles/s41565-018-0337-2), [Losing Lena](https://www.losinglena.com/)). 저와 출판사도 이 취지에 공감하여 이미지를 교체하기로 했습니다. 종이책에는 12쇄부터 반영됐습니다.
-
-:white_check_mark: **2017.04.03** - 책 본문의 수식과 그림 파일들을 모아 공유합니다. 스터디 자료 등을 만드실 때 필요하면 활용하세요.
+:white_check_mark: 책 본문의 수식 및 그림 파일 
 
 * [equations_and_figures.zip](https://github.com/WegraLee/deep-learning-from-scratch/blob/master/equations_and_figures.zip?raw=true)
-
-:white_check_mark: **2017.02.26** - 각 챕터 디렉터리에 README.md 파일을 추가했습니다. 각 파일의 '용도', '관련 절', '등장 페이지'를 명기했고, 책에서 각 장의 '도입부', '목차', '이번 장에서 배운 내용'을 발췌해서 책이 없어도 큰 그림을 파악할 수 있도록 했습니다.
-
-차차 파일 안의 소스 코드에도 친절한 설명을 덧붙이도록 하겠습니다.
-
-:white_check_mark: **2017.02.20** - 3쇄가 출간되었습니다. 크고 작은 오류를 잡는 김에 책 전체를 한 번 더 교정했습니다. 그렇다고 다른 책이 된 게 아니니 1, 2쇄를 보신 분은 오탈자 정보만 확인하시면 충분합니다. 살아 있는 책으로 만들기 위해 이번처럼 기회가 올 때마다 지속해서 품질을 업그레이드할 것이니 궁금하거나 설명이 잘 이해되지 않으면 언제든 문의하세요~
 
 ## 책 미리보기
 [issuu](https://issuu.com/hanbit.co.kr/docs/____________________________________38d0e6451f0ddf) | [SlideShare](http://www.slideshare.net/wegra/ss-70456623) | [Yumpu](https://www.yumpu.com/xx/document/view/56594155/-)
@@ -104,3 +63,37 @@ http://www.hanbit.co.kr/store/books/look.php?p_code=B8475831198
 ## 머신러닝/딥러닝 번역 용어표
 
 이 책을 번역하며 정리한 [용어표](https://docs.google.com/spreadsheets/d/1ccwGiC01X-gs3PPcXPUz67W9rS6l994LD4AL18KF1_0)입니다.
+
+
+---
+## 기타 도서 역자의 커멘트는 아래 참조 
+:red_circle: **[공지]** 종종 실습용 손글씨 데이터셋 다운로드 사이트( http://yann.lecun.com/exdb/mnist/ )가 연결되지 않습니다.
+그래서 예제 수행에 필요한 데이터셋 파일을 /dataset/ 디렉터리에 올려뒀습니다.
+혹 사이트가 다운되어 데이터를 받을 수 없다면 아래 파일 4개를 각자의 <예제 소스 홈>/dataset/ 디렉터리 밑에 복사해두면 됩니다. ^__^
+
+* [t10k-images-idx3-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/t10k-images-idx3-ubyte.gz)
+* [t10k-labels-idx1-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/t10k-labels-idx1-ubyte.gz)
+* [train-images-idx3-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/train-images-idx3-ubyte.gz)
+* [train-labels-idx1-ubyte.gz](https://github.com/WegraLee/deep-learning-from-scratch/raw/master/dataset/train-labels-idx1-ubyte.gz)
+
+---
+
+## 시리즈 소개
+
+<a href="https://github.com/WegraLee/deep-learning-from-scratch-3/blob/master/%EB%B0%91%EB%B0%94%EB%8B%A5%20%EC%8B%9C%EB%A6%AC%EC%A6%88%20%EC%86%8C%EA%B0%9C.pdf"><img src="https://github.com/WegraLee/deep-learning-from-scratch-3/blob/master/%EB%B0%91%EB%B0%94%EB%8B%A5%20%EC%8B%9C%EB%A6%AC%EC%A6%88%20%EC%86%8C%EA%B0%9C.png" width=1000></a>
+
+『밑바닥부터 시작하는 딥러닝』 시리즈는 현재 4편까지 출간되었고, 2024년 중으로 5편도 출간될 예정입니다. 5편까지의 핵심 주제와 관계는 대략 다음 그림처럼 정리할 수 있습니다.
+
+<img src="https://github.com/WegraLee/deep-learning-from-scratch-4/blob/master/series overview.png" width="600">
+
+시리즈의 모든 책은 기존 편을 읽지 않았어도 무리가 없도록 꾸려졌습니다. 예를 들어 3편에서 만드는 프레임워크는 작동 원리뿐 아니라 API 형태까지 파이토치와 거의 같습니다. 그래서 3편을 읽지 않았어도 4편을 읽는 데 전혀 무리가 없습니다.
+
+* [❷편의 깃허브 저장소](https://github.com/WegraLee/deep-learning-from-scratch-2)
+* [❸편의 깃허브 저장소](https://github.com/WegraLee/deep-learning-from-scratch-3)
+* [❹편의 깃허브 저장소](https://github.com/WegraLee/deep-learning-from-scratch-4)
+
+## 선수지식
+
+다음은 역자가 추천하는 선수지식입니다.
+<img src="https://github.com/WegraLee/deep-learning-from-scratch-3/blob/master/%EB%B0%91%EB%B0%94%EB%8B%A5%20%EC%84%A0%EC%88%98%EC%A7%80%EC%8B%9D.png" width=1000>
+
