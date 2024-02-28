@@ -1,3 +1,8 @@
+# 2024 봄학기 "빅데이터 응용 보안" 과목 수강생을 위한 python 프로그래밍 언어 및 딥러닝 개요 tutorial 
+
+- 수강생들이 python 프로그래밍 언어에 대해서 기본적인 사항을 이해하고 있는 것을 전제로 합니다.
+- 참고도서는 아래와 같습니다. 슬라이드 파일을 이용하여 수업이 진행되므로 도서는 구매하지 않아도 무방합니다. 
+
 # 『밑바닥부터 시작하는 딥러닝』
 
 <a href="http://www.yes24.com/Product/Goods/34970929"><img src="https://github.com/WegraLee/deep-learning-from-scratch/blob/master/cover.jpeg" width="150" align=right></a>
